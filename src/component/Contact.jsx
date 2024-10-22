@@ -1,4 +1,19 @@
+import { useState } from "react";
+
 function Contact() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [text, setText] = useState("");
+  function handleclick() {
+    localStorage.setItem(
+      "userdata",
+      JSON.stringify({ userName: name, userEmail: email, userMessage: text })
+    );
+    setName("");
+    setEmail("");
+    setText("");
+  }
+
   return (
     <section className="contact">
       <h1>CONTACT US</h1>
@@ -19,12 +34,34 @@ function Contact() {
           </div>
           <div className="form-intup-form">
             <label htmlFor="name">Name</label>
-            <input id="name" type="text" />
+            <input
+              onChange={(e) => {
+                setName((n) => e.target.value);
+              }}
+              value={name}
+              id="name"
+              type="text"
+            />
             <label htmlFor="email">Email</label>
-            <input id="email" type="text" />
+            <input
+              onChange={(e) => {
+                setEmail((email) => e.target.value);
+              }}
+              value={email}
+              id="email"
+              type="text"
+            />
             <label htmlFor="text">Text</label>
-            <textarea name="" id="text" rows={5}></textarea>
-            <input type="submit" />
+            <textarea
+              onChange={(e) => {
+                setText((t) => e.target.value);
+              }}
+              value={text}
+              name=""
+              id="text"
+              rows={5}
+            ></textarea>
+            <input onClick={handleclick} type="submit" />
           </div>
         </div>
         <div className="form-image">

@@ -16,7 +16,6 @@ body{
 .contact {
   max-width: 1440px;
   max-height: calc(100vh - 72px);
-  overflow: hidden;
   margin: 0 auto;
   padding:20px 200px;
 }
@@ -38,7 +37,7 @@ body{
 
 .form-input{
   padding-top: 30px;
-  max-width: min-content;
+  max-width: fit-content;
 }
 .form-input-btn{
   display: flex;
