@@ -1,0 +1,17 @@
+.blackbtn{
+    all: unset;
+    background-color: black;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-align: center;
+}
+.whitebtn{
+    all: unset;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-align: center;
+}

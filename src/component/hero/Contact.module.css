@@ -1,0 +1,49 @@
+.contactPage{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 0 10px;
+}
+.contactPage h1{
+    font-size: clamp(1rem, 1rem + 10vw, 4rem);
+}
+.contactPage p{
+    font-size: clamp(.8rem, .8rem + 10vw, 1rem);
+}
+
+.contactSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.formSection{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    min-width: 290px;
+    flex-basis: 50%;
+}
+.imgSection img{
+    width: 100%;
+}
+.btns{
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+
+}
+.btns button{
+    flex-basis: 50%;
+}
+.formSection form{
+    padding-top: 20px;
+}
+.submit{
+    width: 100%;
+}
+.submit button{
+    float: right;width: 42%;
+}
