@@ -1,6 +1,5 @@
 import "./App.css";
 import Header from "./component/header/Header";
-import Button from "./component/hero/Button";
 import Contact from "./component/hero/Contact";
 function App() {
   return (
